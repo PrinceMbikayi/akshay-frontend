@@ -1,0 +1,17 @@
+.wrapper form .btn,
+.fetch-btn {
+  background-color: #fa9c23;
+  border-color: #fa9c23;
+  color: white;
+  margin-top: 1rem;
+}
+
+.fetch-btn:hover {
+    background-color: #fa9c23;
+    color: white;
+  }
+  
+  .wrapper form a {
+    font-size: 0.9rem;
+    color: grey;
+  }
