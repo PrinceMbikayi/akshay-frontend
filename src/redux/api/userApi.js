@@ -4,7 +4,7 @@ import { BASE_URL } from './constant';
 
 export const userApi = createApi({
     reducerPath: 'userApi',
-    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     tagTypes: ["User"],
     endpoints: (builder) => ({
         getMe: builder.query({

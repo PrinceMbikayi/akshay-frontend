@@ -3,7 +3,7 @@ import { BASE_URL } from './constant';
 
 export const orderApi = createApi({
     reducerPath: 'orderApi',
-    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     tagTypes: ["Order", "AdminOrders"],
     endpoints: (builder) => ({
         createNewOrder: builder.mutation({

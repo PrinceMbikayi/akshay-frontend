@@ -3,7 +3,7 @@ import { BASE_URL } from './constant';
 
 export const productApi = createApi({
     reducerPath: 'productApi',
-    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     tagTypes: ["Product", "AdminProducts"],
     endpoints: (builder) => ({
         getProducts: builder.query({
